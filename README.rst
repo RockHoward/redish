@@ -574,12 +574,12 @@ Installation
 You can install ``redish`` either via the Python Package Index (PyPI)
 or from source.
 
-To install using ``pip``,::
+To install using ``pip``::
 
     $ pip install redish
 
 
-To install using ``easy_install``,::
+To install using ``easy_install``::
 
     $ easy_install redish
 
@@ -589,3 +589,28 @@ by doing the following,::
 
     $ python setup.py build
     # python setup.py install # as root
+
+Unit Tests
+==========
+
+The unit tests have additional requirements such as ``unittest2`` and ``simplejson``.
+Optionally you can use ``nose`` and ``nose-coverage``. Load them all with ``pip`` as follows::
+
+    $ pip install -r requirements/test.txt
+
+If you don't want to use ``nose``, you can install ``unittest2`` as follows::
+
+    $ pip install unittest2
+
+You can run the unit tests as follows::
+
+    $ nosetests
+
+or::
+
+    $ unit2 discover
+
+or::
+
+    $ python -m unittest discover
+
